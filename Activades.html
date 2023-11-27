@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="/Imagenes/Logo-removebg-preview.png">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="Ramas.html">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="Inscripcion.html">
+    <link rel="stylesheet" href="Donaciones.html">
+    <link rel="stylesheet" href="Historia.html">
+    <link rel="stylesheet" href="Eventos.html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body class="body">
+     <div class="">
+                                                   <!-- BARRA DE NAVEGACION-->
+     <div class="">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid  ">
+          <a href="index.html" class="button-img-sup"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="textodenav" class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a id="textodenav" class="nav-link" href="Activades.html">Actividades</a>
+              </li>
+              <li class="nav-item">
+                <a id="textodenav" class="nav-link" href="Ramas.html">Ramas</a>
+              </li>
+              <li class="nav-item">
+                <a id="textodenav" class="nav-link" href="Inscripcion.html">Inscripción</a>
+              </li>
+              <li class="nav-item">
+                <a id="textodenav" class="nav-link" href="Historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a id="textodenav" class="nav-link" href="Donaciones.html">Donaciones</a>
+              </li>
+              <li class="nav-item">
+                <a id="textodenav" class="nav-link" href="Eventos.html">Eventos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+     </div>
+
+                                                        <!--TARJETAS DE ACTIVIDADES-->
+
+<div class="container">
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12"></div>
+<h2 id="texact" class="text-center">"Creando Recuerdos: Nuestras Increíbles Actividades Scout"</h2>
+
+<section>
+  
+  <img id="iact" class="img-fluid" src="Imagenes_actividades/Servicio.png" >
+  <img id="iact" class="img-fluid" src="Imagenes_actividades/Beneficios.png" >
+  <img id="iact" class="img-fluid" src="Imagenes_actividades/Campamentos.png" >
+  <img id="iact" class="img-fluid" src="Imagenes_actividades/Capacitaciones.png" >
+  <img id="iact" class="img-fluid" src="Imagenes_actividades/Juegos y Danzas.png" >
+  
+
+</section>
+</div>
+</div>
+
+
+                                                     <!--BOTON QUE DESPLAZA HACIA ARRIBA-->
+
+
+
+<button class="btn" id="btnScrollUp" onclick="scrollToTop()"><b>∧</b></button>
+
+      
+
+
+
+
+                                                         <!-- PIE DE PAGINA!-->
+    <footer class="pie" >
+      <div class="grupo1">   
+         <div class="boxi">
+          <a href="index.html" class="button-img-sup" id="logo_fot"></a>
+         </div>
+         </div>          
+      </div>		
+        <div class="grupo2">
+         <div class="boxi">
+          <a id="icono" href="https://wa.me/+5492645649774" class="icon-red-social">
+            <i class="bi bi-whatsapp"></i>
+         <a href="https://www.instagram.com/scoutsargentina/" class="icon-red-social">
+          <i class="bi bi-instagram"></i>
+       </a>             
+       <a href="https://www.facebook.com/ScoutsArgentina" class="icon-red-social">
+        <i class="bi bi-facebook"></i>
+      </a>
+          <br><br>
+        </div>
+        <div class="grupo3">
+          <div class="boxi">
+           <small>Calle General Acha, 2748 (SUR), Rawson , San Juan-Argentina.</small>
+          </div>
+       </div>			
+       <div class="grupo4">
+          <div class="boxi">
+           <small>&copy <b>Scout-ONG</b>-Todos los derechos reservados.</small>
+           <br><br>
+          </div>
+       </div>			
+    </footer> 
+
+    <script>
+      // Función para desplazamiento suave hacia arriba
+      function scrollToTop() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      }
+    
+      // Mostrar el botón cuando se hace scroll hacia abajo
+      window.onscroll = function() {
+          var btnScrollUp = document.getElementById('btnScrollUp');
+          if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 600) {
+              btnScrollUp.style.display = 'block';
+          } else {
+              btnScrollUp.style.display = 'none';
+          }
+      };
+    </script> 
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</body>
+</html>

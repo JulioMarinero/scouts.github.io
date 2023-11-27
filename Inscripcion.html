@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scouts.ONG</title>
+    <link rel="icon" href="/Imagenes/Logo-removebg-preview.png">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="Ramas.html">
+    <link rel="stylesheet" href="Inscripcion.html">
+    <link rel="stylesheet" href="Activades.html">
+    <link rel="stylesheet" href="Donaciones.html">
+    <link rel="stylesheet" href="Historia.html">
+    <link rel="stylesheet" href="Eventos.html">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+ </head>
+    <body class="body">
+    <div>
+
+                                                <!-- BARRA DE NAVEGACION-->
+
+     <div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid  ">
+          <a href="index.html" class="button-img-sup"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a id="textodenav" class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a id="textodenav" class="nav-link" href="Activades.html">Actividades</a>
+              </li>
+              <li class="nav-item">
+                <a id="textodenav" class="nav-link" href="Ramas.html">Ramas</a>
+              </li>
+              <li class="nav-item">
+                <a id="textodenav" class="nav-link" href="Inscripcion.html">Inscripción</a>
+              </li>
+              <li class="nav-item">
+                <a id="textodenav" class="nav-link" href="Historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a id="textodenav" class="nav-link" href="Donaciones.html">Donaciones</a>
+              </li>
+              <li class="nav-item">
+                <a id="textodenav" class="nav-link" href="Eventos.html">Eventos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </div>
+
+
+                                                      <!--TEXTO-->
+
+    <div class="container">
+      <br><br>
+      <h2 style="text-align: center;font-family: 'Alice', serif;""><b>¡Quiero ser un Scout!</b></h2>
+      <p style="font-family: 'Roboto', sans-serif;"><b>Tu también puedes formar parte de esta gran familia. Súmate y acompáñanos en esta nueva experiencia que sin duda será una de las que te traerá mejores recuerdos, viajes, amigos y un lugar en donde podrás desarrollar al máximo tu potencial, realizando una serie de actividades que fomentaran tu crecimiento y conocimiento sobre el mundo.</b></p>
+    
+    
+                                                     <!--IMAGEN-->
+
+      <div class="row align-items-center">
+         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <img src="img/formu.webp">
+        </div>
+
+      
+                                                  <!--FORMULARIO-->
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <form action="enviar.php" method="post" class="formulario">
+                <h3 style="text-align: center;font-family: 'Alice', serif;">Inscripción</h3>
+                <div class="input-group">
+                  <label for="nombre"  style="font-family: 'Alice', serif;">Nombre completo:</label>
+                  <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="input-group">
+                  <label for="email"  style="font-family: 'Alice', serif;">Correo Electrónico:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group"> 
+                  <label for="opciones"  style="font-family: 'Alice', serif;">Rango:</label>
+                  <select id="opciones" name="opciones" required>
+                    <option selected disabled ></option>
+                      <option value="opcion1">De 7 a 11 años</option>
+                      <option value="opcion2">De 11 a 14 años</option>
+                      <option value="opcion3">De 14 a 17 años</option>
+                      <option value="opcion4">De 18 a 21 años</option>
+                      <option value="opcion5">Voluntario mayor a 21 años</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                <label for="numeroTelefono"  style="font-family: 'Alice', serif;">Teléfono:</label>
+                <input type="tel" id="numeroTelefono" pattern="[0-9]+" required>
+              </div>
+                <div class="input-group">
+                  <label for="mensaje"  style="font-family: 'Alice', serif;">Otros:</label>
+                  <textarea id="mensaje" name="mensaje" placeholder="Informacion medica adicional" required></textarea>
+                </div>
+                <div class="input-group">
+                  <div class="buto">
+                  <button class="cssbuttons-io-button" onclick="window.location='index.html'">
+                    <div class="icon">
+                      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+                    </div>
+                  </button>
+                </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          </div>
+
+
+
+                                                <!-- PIE DE PAGINA!-->
+
+    <footer class="pie" >
+      <div class="grupo1">   
+         <div class="boxi">
+          <a href="index.html" class="button-img-sup" id="logo_fot"></a>
+         </div>
+         </div>          
+      </div>		
+        <div class="grupo2">
+         <div class="boxi">
+          <a id="icono" href="https://wa.me/+5492645649774" class="icon-red-social">
+            <i class="bi bi-whatsapp"></i>
+         <a href="https://www.instagram.com/scoutsargentina/" class="icon-red-social">
+          <i class="bi bi-instagram"></i>
+       </a>             
+       <a href="https://www.facebook.com/ScoutsArgentina" class="icon-red-social">
+        <i class="bi bi-facebook"></i>
+      </a>
+          <br><br>
+        </div>
+        <div class="grupo3">
+          <div class="boxi">
+           <small>Calle General Acha, 2748 (SUR), Rawson , San Juan-Argentina.</small>
+          </div>
+       </div>			
+       <div class="grupo4">
+          <div class="boxi">
+           <small>&copy <b>Scout-ONG</b>-Todos los derechos reservados.</small>
+           <br><br>
+          </div>
+       </div>			
+    </footer> 
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    </body>
+</html>
